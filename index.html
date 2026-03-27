@@ -12,15 +12,17 @@
       <h2>System.Protocol: KNB_v2</h2>
 
       <div id="status-console">Initializing... Please connect MetaMask.</div>
+
       <div class="stats-panel">
         <div class="stat-item">
           WALLET: <span id="user-balance">0.000</span> tBNB
         </div>
         <div class="stat-item">
-          SCORE: <span id="score-wins">0</span>W -
-          <span id="score-losses">0</span>L
+          SCORE: <span id="score-wins">0</span> W -
+          <span id="score-losses">0</span> L
         </div>
       </div>
+
       <div class="choices">
         <button id="btn-0" onclick="playGame(0)">[ ROCK ]</button>
         <button id="btn-1" onclick="playGame(1)">[ PAPER ]</button>
@@ -28,12 +30,13 @@
       </div>
 
       <div id="result">_AWAITING_INPUT_</div>
-      <button id="sync-btn" onclick="updateGameHistory()" class="cyber-button">
-        СИНХРОНИЗИРОВАТЬ ДАННЫЕ
+
+      <button id="sync-btn" onclick="updateUI()" class="cyber-button">
+        ОБНОВИТЬ БАЛАНС И СЧЕТ
       </button>
 
       <button id="withdraw-btn" class="admin-btn" onclick="withdrawFunds()">
-        WITHDRAW_TOTAL_BALANCE
+        ВЫВЕСТИ ВСЕ СРЕДСТВА
       </button>
     </div>
 
